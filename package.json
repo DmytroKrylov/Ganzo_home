@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://DmytroKrylov.github.io/Civiv_card",
+  "homepage": "https://DmytroKrylov.github.io/Ganzo_home",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Civiv_card/"
+    "build": "parcel build src/*.html --public-url /Ganzo_home/"
   },
   "repository": {
     "type": "git",

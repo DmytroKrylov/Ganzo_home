@@ -1,417 +1,217 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Link Swiper's CSS -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <header></header>
     <main>
-      <section>
-        <div class="card__content mainContainer">
-          <h1 class="card__title">Ніж складаний Civivi Lumi C20024-2</h1>
-          <div class="card__flex">
-            <div class="swiper__width">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img class="swiper__img" src="./images/img.png" alt="img" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper__img" src="./images/img.png" alt="img" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper__img" src="./images/img.png" alt="img" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper__img" src="./images/img.png" alt="img" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper__img" src="./images/img.png" alt="img" />
-                  </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+      <section class="hero">
+        <div class="hero__content">
+          <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="hero__img" href="#"> </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="hero__img" href="#"> </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="hero__img" href="#"> </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="hero__img" href="#"> </a>
               </div>
             </div>
-            <div>
-              <p class="card__article">Артикул:C20024-2</p>
-              <p class="card__delivery">
-                Відправляємо ваші замовлення безкоштовно кожен день
-              </p>
-              <p class="card__price">2 700 грн</p>
-
-              <div class="card__availability">
-                <p class="card__left">В наявності</p>
-                <p class="card__right">х3 міс.</p>
-              </div>
-
-              <div class="card__color">
-                <p class="card__items">Колір:</p>
-                <span class="card__black"></span>
-                <span class="card__gray"></span>
-                <span class="card__blue"></span>
-              </div>
-
-              <button class="card__button">У кошик</button>
-
-              <div id="accordion" class="accordion__margin">
-                <div>
-                  <a
-                    class="card-link"
-                    data-toggle="collapse"
-                    href="#collapseOne"
-                    onclick="toggleIcon(this)"
-                  >
-                    Корпоративне замовлення
-                  </a>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="goods">
+        <div class="mainContainer">
+          <div class="goods__content">
+            <div class="swiper goodsSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h2 class="goods__title">Ножи</h2>
+                  <a class="goods__img" href="#"> </a>
                 </div>
-                <div id="collapseOne" class="collapse" data-parent="#accordion">
-                  <div class="card-body">Опис</div>
+                <div class="swiper-slide">
+                  <h2 class="goods__title">Ножи</h2>
+                  <a class="goods__img" href="#"> </a>
+                </div>
+                <div class="swiper-slide">
+                  <h2 class="goods__title">Ножи</h2>
+                  <a class="goods__img" href="#"> </a>
+                </div>
+                <div class="swiper-slide">
+                  <h2 class="goods__title">Ножи</h2>
+                  <a class="goods__img" href="#"> </a>
                 </div>
               </div>
-
-              <div class="card__cash">
-                <p class="card__oplata">Оплата:</p>
-                <ul class="cash__items">
-                  <li class="cash__item svg4">
-                    Онлайн картою <br />
-                    Visa/Mastercard
-                  </li>
-                  <li class="cash__item svg5">При отриманні</li>
-                  <li class="cash__item svg6">Оплата частинами</li>
-                </ul>
-              </div>
-              <p class="card__discount">Знайшли дешевше?</p>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
-
-          <p class="collapse__flex">
-            <a
-              class="btn"
-              href="#collapseDescription"
-              role="button"
-              aria-expanded="false"
-              aria-controls="collapseDescription"
-            >
-              Опис
-            </a>
-            <a
-              class="btn"
-              href="#collapseSpecifications"
-              role="button"
-              aria-expanded="false"
-              aria-controls="collapseSpecifications"
-            >
-              Характеристики
-            </a>
-            <a
-              class="btn"
-              href="#collapseReviews"
-              role="button"
-              aria-expanded="false"
-              aria-controls="collapseReviews"
-            >
-              Відгуки
-            </a>
-          </p>
-          <div class="collapse" id="collapseDescription">
-            <div class="card__bottom">
-              <p class="card__desk">
-                Загострений ніж виконаний з увігнутими краями. Він гарно ріже і
-                проколює. Варто зазначити, що такий ніж зручний ніж для
-                виконання завдань, що потребують підвищеної точності та
-                акуратності. Для виготовлення леза використовується шведська
-                ножова сталь Sandvik 14C28N. У ній гармонійно поєднуються
-                великий запас міцності, а також висока твердість. Це дозволяє
-                довго зберігати гостроту кромки,забезпечується стійкість до
-                корозії.
+        </div>
+      </section>
+      <section class="about">
+        <div class="mainContainer">
+          <div class="about__content">
+            <div class="about__text">
+              <h2 class="about__title">Почему Ganzo</h2>
+              <p class="about__paragraph">
+                Компания Ganzo получила более сотни патентов, разрабатывая
+                собственные методы изготовления и функциональные детали.
+                Продукция, которая должна быть сертифицирована по международным
+                стандартам, должна пройти эту процедуру и, следовательно,
+                соответствовать всем жестким требованиям соответствия
+                стандартам.
               </p>
-              <iframe
-                class="card__video"
-                src="https://www.youtube.com/embed/nh-4RDSw-5Q?si=d9u5DbED8nQor4Zj"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-              <div class="card__bottomImgFlex">
-                <img class="bottom__img" src="./images/img1.png" alt="img" />
-                <img class="bottom__img" src="./images/img1.png" alt="img" />
-                <img class="bottom__img" src="./images/img1.png" alt="img" />
-                <img class="bottom__img" src="./images/img1.png" alt="img" />
-                <img class="bottom__img" src="./images/img1.png" alt="img" />
-              </div>
-              <p class="card__desk">
-                Загострений ніж виконаний з увігнутими краями. Він гарно ріже і
-                проколює. Варто зазначити, що такий ніж зручний ніж для
-                виконання завдань, що потребують підвищеної точності та
-                акуратності. Для виготовлення леза використовується шведська
-                ножова сталь Sandvik 14C28N. У ній гармонійно поєднуються
-                великий запас міцності, а також висока твердість. Це дозволяє
-                довго зберігати гостроту кромки,забезпечується стійкість до
-                корозії. <br />
-                Розкривається ніж за допомогою фронтального фліпера, що виглядає
-                як невеликий виступ на торцевій частині. Фіксація леза
-                здійснюється за допомогою замку Liner-Lock. Механізм обертання
-                леза забезпечується завдяки підшипникам. <br />
-                Ручка класичної форми дозволяє утримувати ніж як прямим, так і
-                зворотним хватом. Лайнери ручки виготовлені з нержавіючої сталі,
-                накладки виготовлені з текстоліту G-10. Цей матеріал
-                характеризується достатньо міцністю і легкістю, виконаний із
-                скловолокна з додаванням синтетичної смоли. Має приємну
-                протиковзку фактуру, тому гарно лежить у руці, забезпечується
-                достатнє зчеплення. З’ємна сталева кліпса може бути встановлена
-                у двох положеннях для більш комфортного носіння. <br />
-                У розкритому вигляді повна довжина моделей Lumi C20024 не
-                перевищує 155 мм.
+              <p class="about__description">
+                Ближе познакомиться с Ganzo вы можете на странице
+                <a class="about__prelink" href="#">o бренде</a>
               </p>
-              <h2 class="card__bottomTitle">Особливості:</h2>
-              <ul style="list-style-type: disc; padding-left: 20px">
-                <li class="card__bottomDesc">
-                  ручка захищена від вологи, ударостійка;
-                </li>
-                <li class="card__bottomDesc">
-                  контакт ножа з їжею безпечний, у складі сплаву леза немає
-                  домішок фосфору і сірки;
-                </li>
-                <li class="card__bottomDesc">
-                  лезо має елегантну форму і обертається на підшипниках;
-                </li>
-                <li class="card__bottomDesc">
-                  довжина складаного ножа трохи більше 91 мм;
-                </li>
-                <li class="card__bottomDesc">
-                  товщина складає 10,4 мм (з кліпсою 15.2 мм) і ширина 20,7 мм.
-                </li>
-              </ul>
+              <a class="about__link" href="#">Перейти</a>
             </div>
+            <img src="./images/img2.png" alt="img" />
           </div>
+        </div>
+      </section>
+      <section class="novelty">
+        <div class="mainContainer">
+          <ul class="novelty__list">
+            <li class="novetly__item">
+              <a class="novelty__link" href="#">Новинки</a>
+            </li>
+            <li class="novetly__item">
+              <a class="novelty__link" href="#">Топ продаж</a>
+            </li>
+            <li class="novetly__item">
+              <a class="novelty__link" href="#">Обзоры</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="news">
+        <div class="mainContainer">
+          <div class="news__content">
+            <h2 class="news__title">НОВОСТИ</h2>
+            <!-- Swiper -->
+            <div class="swiper newsSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper__flex">
+                  <div class="news__bg">
+                    <h2 class="news__headline">
+                      10 вариантов новогоднего подарка от Ganzo
+                    </h2>
+                    <p class="news__paragraph">
+                      Новогодние праздники – время теплых поздравлений и
+                      приятных сюрпризов, которые дарят положительные эмоции и
+                      воспоминания на весь год.
+                    </p>
+                    <a class="news__link" href="#">Перейти</a>
+                  </div>
 
-          <div class="collapse" id="collapseSpecifications">
-            <div id="accordion" class="accordion__margin">
-              <div>
-                <a
-                  class="card-link card-link__bg"
-                  data-toggle="collapse"
-                  href="#collapseSpecificationsOne"
-                  onclick="toggleIcon(this)"
-                >
-                  Основні характеристики
-                </a>
-              </div>
-              <div
-                id="collapseSpecificationsOne"
-                class="collapse"
-                data-parent="#accordion"
-              >
-                <div class="card-body card__body__table">
-                  <table>
-                    <tr>
-                      <th>Тип товару</th>
-                      <td>Ножі</td>
-                    </tr>
-                    <tr>
-                      <th>Бренд</th>
-                      <td>Civivi</td>
-                    </tr>
-                    <tr>
-                      <th>Тип ножа</th>
-                      <td>складний</td>
-                    </tr>
-                    <tr>
-                      <th>Тип замка</th>
-                      <td>Liner Lock</td>
-                    </tr>
-                    <tr>
-                      <th>Вид ножа</th>
-                      <td>кишеньковий, туристичний, на кожен день</td>
-                    </tr>
-                    <tr>
-                      <th>Тип заточки</th>
-                      <td>прямий</td>
-                    </tr>
-                    <tr>
-                      <th>Сталь клинка</th>
-                      <td>нержавіюча</td>
-                    </tr>
-                    <tr>
-                      <th>Марка сталі</th>
-                      <td>14C28N</td>
-                    </tr>
-                  </table>
+                  <span class="news__img"></span>
+                </div>
+                <div class="swiper-slide swiper__flex">
+                  <div class="news__bg">
+                    <h2 class="news__headline">
+                      10 вариантов новогоднего подарка от Ganzo
+                    </h2>
+                    <p class="news__paragraph">
+                      Новогодние праздники – время теплых поздравлений и
+                      приятных сюрпризов, которые дарят положительные эмоции и
+                      воспоминания на весь год.
+                    </p>
+                    <a class="news__link" href="#">Перейти</a>
+                  </div>
+
+                  <span class="news__img"></span>
+                </div>
+                <div class="swiper-slide swiper__flex">
+                  <div class="news__bg">
+                    <h2 class="news__headline">
+                      10 вариантов новогоднего подарка от Ganzo
+                    </h2>
+                    <p class="news__paragraph">
+                      Новогодние праздники – время теплых поздравлений и
+                      приятных сюрпризов, которые дарят положительные эмоции и
+                      воспоминания на весь год.
+                    </p>
+                    <a class="news__link" href="#">Перейти</a>
+                  </div>
+
+                  <span class="news__img"></span>
+                </div>
+                <div class="swiper-slide swiper__flex">
+                  <div class="news__bg">
+                    <h2 class="news__headline">
+                      10 вариантов новогоднего подарка от Ganzo
+                    </h2>
+                    <p class="news__paragraph">
+                      Новогодние праздники – время теплых поздравлений и
+                      приятных сюрпризов, которые дарят положительные эмоции и
+                      воспоминания на весь год.
+                    </p>
+                    <a class="news__link" href="#">Перейти</a>
+                  </div>
+
+                  <span class="news__img"></span>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div id="accordion">
-              <div>
-                <a
-                  class="card-link card-link__bg"
-                  data-toggle="collapse"
-                  href="#collapseSpecificationsTwo"
-                  onclick="toggleIcon(this)"
-                >
-                  Зовнішні характеристики
-                </a>
-              </div>
-              <div
-                id="collapseSpecificationsTwo"
-                class="collapse"
-                data-parent="#accordion"
-              >
-                <div class="card-body card__body__table">
-                  <table>
-                    <tr>
-                      <th>Загальна довжина</th>
-                      <td>154.7 мм</td>
-                    </tr>
-                    <tr>
-                      <th>Довжина клинка</th>
-                      <td>65 мм</td>
-                    </tr>
-                    <tr>
-                      <th>Товщина клинка</th>
-                      <td>2 мм</td>
-                    </tr>
-                    <tr>
-                      <th>Довжина руків'я</th>
-                      <td>91.2 мм</td>
-                    </tr>
-                    <tr>
-                      <th>Колір клинка</th>
-                      <td><span class="td__color"></span></td>
-                    </tr>
-                    <tr>
-                      <th>Колір руків'я</th>
-                      <td>
-                        <div class="td__color__flex">
-                          <span class="black"></span>
-                          <span class="gray"></span>
-                          <span class="blue"></span>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>Твердість клинка</th>
-                      <td>58-60 HRC</td>
-                    </tr>
-                    <tr>
-                      <th>Кишенькова кліпса</th>
-                      <td>Так</td>
-                    </tr>
-                    <tr>
-                      <th>Дизайнер</th>
-                      <td>Justin Lundquist</td>
-                    </tr>
-                    <tr>
-                      <th>Вага</th>
-                      <td>58.6 г</td>
-                    </tr>
-                    <tr>
-                      <th>Гарантія</th>
-                      <td>12 місяців</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="collapse" id="collapseReviews">
-            <p class="card__desk">Відгуки задоволених покіпців</p>
           </div>
         </div>
       </section>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer></footer>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-      const swiper = new Swiper('.mySwiper', {
-        cssMode: true,
-        loop: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+      const newsSwiper = new Swiper('.newsSwiper', {
         pagination: {
           el: '.swiper-pagination',
         },
-        mousewheel: true,
-        keyboard: true,
+        breakpoints: {
+          360: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+        },
       });
     </script>
 
-    <!-- Скрипт зміни іконки в Accordeon -->
+    <!-- Initialize Swiper -->
     <script>
-      function toggleIcon(element) {
-        element.classList.toggle('active');
-      }
+      const goodsSwiper = new Swiper('.goodsSwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
     </script>
 
-    <!-- Скрипт згортання та розкортання Collapse -->
+    <!-- Initialize Swiper -->
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const buttons = document.querySelectorAll('.collapse__flex .btn');
-        buttons.forEach(button => {
-          button.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = button.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            // Закрити всі блоки
-            document.querySelectorAll('.collapse').forEach(collapse => {
-              if (collapse.id !== targetId) {
-                collapse.classList.remove('show');
-              }
-            });
-
-            // Перемикнути стан цільового блоку
-            targetElement.classList.toggle('show');
-
-            // Якщо це "Характеристики", розгорнути вкладений блок і додати клас active
-            if (targetId === 'collapseSpecifications') {
-              const innerCollapse = document.getElementById(
-                'collapseSpecificationsOne'
-              );
-              innerCollapse.classList.add('show');
-
-              // Додати клас active до посилання "Основні характеристики"
-              const cardLink = document.querySelector(
-                '.card-link[href="#collapseSpecificationsOne"]'
-              );
-              cardLink.classList.add('active');
-            }
-          });
-        });
+      const heroSwiper = new Swiper('.heroSwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
       });
-
-      // Функція для перемикання іконки (опціонально, якщо є додаткова логіка)
-      function toggleIcon(element) {
-        element.classList.toggle('active');
-      }
     </script>
   </body>
 </html>
