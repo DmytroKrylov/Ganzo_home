@@ -29,6 +29,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'AkzidenzGroteskPro Regular';
+  line-height: 0;
 }
 
 img {
@@ -162,6 +163,10 @@ img {
 .dropdown {
   display: flex;
   align-items: center;
+}
+
+.dropdown-menu {
+  line-height: 1.5;
 }
 
 .btn-secondary {
